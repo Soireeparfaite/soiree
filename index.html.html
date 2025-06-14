@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soirée Parfaite - Accueil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ff4a6e;
+      --accent: #f7d488;
+      --dark: #1a1a2e;
+      --light: #f9f9f9;
+      --text-dark: #2c3e50;
+      --radius: 12px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('https://www.terre.tv/wp-content/uploads/2023/02/sejour-en-amoureux-activites-sportives.jpg') center/cover no-repeat;
+      color: var(--text-dark);
+    }
+
+    header {
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    nav {
+        
+      background: var(--dark);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 30px;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: var(--accent);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 24px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .highlight {
+      background: var(--primary);
+      color: white;
+      padding: 40px;
+      border-radius: var(--radius);
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .highlight h2 {
+      margin: 0 0 10px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .feature {
+      background: white;
+      padding: 20px;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    .cta {
+      background: var(--accent);
+      padding: 40px;
+      text-align: center;
+      border-radius: var(--radius);
+      margin-top: 40px;
+    }
+
+    .cta a {
+      background: var(--primary);
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: var(--radius);
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">Soirée Parfaite</div>
+    <ul>
+      <li><a href="fonctionnement.html">Fonctionnement</a></li>
+      <li><a href="#cout">Combien ça coûte ?</a></li>
+      <li><a href="#infos">Infos pratiques</a></li>
+      <li><a href="generateur.html">Générer un menu</a></li>
+      <li><a href="#">Se connecter</a></li>
+      <li><a href="inscription.html" style="color: var(--accent); font-weight: bold;">Inscription gratuite</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Organisez vos soirées sans stress</h1>
+    <p>Des activités, des repas et des idées prêtes à l'emploi pour une soirée inoubliable entre amis ou en famille.</p>
+  </header>
+
+  <section id="fonctionnement">
+    <h2>Comment ça marche ?</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>1. Précisez vos envies</h3>
+        <p>Budget, thème, nombre de personnes...</p>
+      </div>
+      <div class="feature">
+        <h3>2. Générez votre menu</h3>
+        <p>Obtenez un programme d'activités et de repas adapté en un clic.</p>
+      </div>
+      <div class="feature">
+        <h3>3. Partagez et profitez</h3>
+        <p>Envoyez le planning à vos invités et amusez-vous !</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="highlight" id="cout">
+    <h2>Combien ça coûte ?</h2>
+    <p>Le service de base est 100% gratuit. Aucune carte bancaire n'est requise.</p>
+  </section>
+
+  <section id="infos">
+    <h2>Pourquoi utiliser Soirée Parfaite ?</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Des idées originales</h3>
+        <p>Des activités amusantes pour tous les goûts.</p>
+      </div>
+      <div class="feature">
+        <h3>Gain de temps</h3>
+        <p>Fini les heures passées à organiser, tout est prêt !</p>
+      </div>
+      <div class="feature">
+        <h3>Accessibilité</h3>
+        <p>Sur tous vos appareils, à tout moment.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Prêt à créer votre soirée ?</h2>
+    <a href="generateur.html">Lancer le générateur</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Soirée Parfaite. Tous droits réservés.
+  </footer>
+</body>
+
+</html>
